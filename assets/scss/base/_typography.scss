@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+h1,h2,h3{
+  color: $black;
+  text-transform: capitalize;
+}
+
+h1{
+  font-size: clamp(2.8rem, 3.5vw , 6rem);
+}
+
+h2{
+  font-size: clamp(2.8rem, 3vw , 3.8rem);
+}
+
+h3{
+  font-size: clamp(2.4rem, 2.5vw , 2.8rem);
+}
+
+p{
+  color: $light-black;
+  font-size: clamp(1.6rem, 1.5vw , 1.7rem);
+  line-height: 2;
+}

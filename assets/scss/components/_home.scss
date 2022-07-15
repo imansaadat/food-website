@@ -1,0 +1,64 @@
+@use "../abstracts/" as *;
+.home{
+
+  .swiper-slide-active{
+    .home__content{
+      display: inline-block;
+    }
+  }
+  
+  &__slide{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-bg;
+    background-blend-mode: multiply;
+  }
+  
+  &__content{
+    text-align: center;
+    display: none;
+    max-width: 60rem;
+    p{
+      font-size: 3rem;
+      color: $light;
+      animation: fadeIn 0.4s ease-in-out .2s backwards;
+    }
+    h3{
+      font-size: clamp(3.5rem, 8vw , 9rem);
+      color: $white;
+      text-transform: uppercase;
+      margin: 1.5rem 0;
+      animation: fadeIn 0.4s ease-in-out .4s backwards;
+    }
+    a{
+      animation: fadeIn 0.4s ease-in-out .6s backwards;
+    }
+  }
+
+  .swiper-button-prev,.swiper-button-next{
+    background-color: $white;
+    width: 4rem;
+    height: 4rem;
+    color: $black;
+    &::after{
+      font-size: 2rem;
+    }
+    &:hover{
+      background-color: $brown;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width:992px){
+  .home{
+    .swiper-button-prev,.swiper-button-next{
+       top: initial;
+       bottom:.5rem;
+    }
+  }
+}

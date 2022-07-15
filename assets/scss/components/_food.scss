@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+.food {
+  background-color: $light-bg;
+  .card {
+    text-align: center;
+    background-color: $white;
+    padding: 2rem;
+    border-radius: .4rem;
+    opacity: 0.5;
+    transform: scale(0.9);
+    cursor: pointer;
+    &__img {
+      height: 24rem;
+      margin-bottom: 2rem;
+    }
+    &__title {
+      color: $black;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    &__price {
+      font-size: 2.4rem;
+      color: $brown;
+    }
+  }
+  .swiper-wrapper {
+    padding: 4rem 0;
+  }
+  .swiper-slide-active {
+    .card {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: $box-shadow;
+      border: $border;
+    }
+  }
+  .swiper-pagination {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet-active {
+    background: $brown;
+  }
+}

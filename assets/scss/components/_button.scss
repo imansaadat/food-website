@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+.btn{
+  display: inline-block;
+  padding: 1rem 3.2rem;
+  color: $white;
+  background-color: $brown;
+  font-size: 2rem;
+  border-radius: .2rem;
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  &::before{
+   content: '';
+   position: absolute;
+   width:0;
+   height: 100%;
+   top: 0;
+   right:0;
+   transition: .3s;
+  }
+  &:hover{
+    &::before{
+      background-color: rgba(0,0,0,.2);
+      left:0;
+      width: 100%;
+    }
+  }
+}

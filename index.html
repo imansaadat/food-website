@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Light Gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <title>Food / Restaurant</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content container">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="#"><i class="fas fa-utensils"></i> food.</a>
+        </div>
+        <!-- Navbar -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#food" class="nav__link">food</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#menu" class="nav__link">menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#order" class="nav__link">order</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blogs" class="nav__link">blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Burger Menu -->
+        <div class="header__icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Home -->
+      <section id="home" class="home">
+        <div class="swiper home__slider">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide home__slide"
+              style="background-image: url(assets/images/home-slide-1.jpg)"
+            >
+              <div class="home__content">
+                <p>outstanding food</p>
+                <h3>elicious cooking</h3>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide home__slide"
+              style="background-image: url(assets/images/home-slide-2.jpg)"
+            >
+              <div class="home__content">
+                <p>outstanding food</p>
+                <h3>morning moment</h3>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide home__slide"
+              style="background-image: url(assets/images/home-slide-3.jpg)"
+            >
+              <div class="home__content">
+                <p>outstanding food</p>
+                <h3>authentic kitchen</h3>
+                <a href="#" class="btn">get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <!-- Abotu Us -->
+      <section id="about" class="about py">
+        <div class="about__container container">
+          <div class="about__image">
+            <img
+              src="assets/images/about-img.png"
+              alt="Welcome To Our Restaurant"
+            />
+          </div>
+          <div class="about__content">
+            <h2>Welcome To Our Restaurant</h2>
+            <p>
+              Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Nisi
+              Optio At, Saepe Accusamus Dolorum, Quos Eos Nesciunt Amet
+              Exercitationem Illum Quis Nostrum, Repellat Quaerat Eum Debitis
+              Fugit Alias Magnam Omnis!
+            </p>
+            <a href="#" class="btn">read more</a>
+            <div class="about__boxes">
+              <div class="about__box">
+                <img src="assets/images/about-icon-1.png" alt="quality food" />
+                <h3>quality food</h3>
+              </div>
+              <div class="about__box">
+                <img src="assets/images/about-icon-2.png" alt="food & drinks" />
+                <h3>food & drinks</h3>
+              </div>
+              <div class="about__box">
+                <img src="assets/images/about-icon-3.png" alt="expert chefs" />
+                <h3>expert chefs</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Food Section -->
+      <section id="food" class="food py">
+        <div class="container">
+          <div class="heading">
+            <h3>Popular Dishes</h3>
+            <h2>Our Delicious Food</h2>
+          </div>
+          <div class="swiper food__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card" data-name="card-1">
+                  <img
+                    src="assets/images/food-img-1.png"
+                    class="card__img"
+                    alt="delicious food"
+                  />
+                  <h3 class="card__title">delicious food</h3>
+                  <span class="card__price">$49.99</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card" data-name="card-2">
+                  <img
+                    src="assets/images/food-img-2.png"
+                    class="card__img"
+                    alt="delicious food"
+                  />
+                  <h3 class="card__title">delicious food</h3>
+                  <span class="card__price">$49.99</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card" data-name="card-3">
+                  <img
+                    src="assets/images/food-img-3.png"
+                    class="card__img"
+                    alt="delicious food"
+                  />
+                  <h3 class="card__title">delicious food</h3>
+                  <span class="card__price">$49.99</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card" data-name="card-4">
+                  <img
+                    src="assets/images/food-img-4.png"
+                    class="card__img"
+                    alt="delicious food"
+                  />
+                  <h3 class="card__title">delicious food</h3>
+                  <span class="card__price">$49.99</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card" data-name="card-5">
+                  <img
+                    src="assets/images/food-img-5.png"
+                    class="card__img"
+                    alt="delicious food"
+                  />
+                  <h3 class="card__title">delicious food</h3>
+                  <span class="card__price">$49.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Food / Preview section -->
+      <section class="preview py">
+        <div class="container">
+          <div class="preview__container">
+            <div class="preview__closeIcon">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="card" data-target="card-1">
+              <img src="assets/images/food-img-1.png" class="card__img" alt="" />
+              <h3 class="card__title">delicious food</h3>
+              <div class="card__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__price">$49.99</div>
+              <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="card" data-target="card-2">
+              <img src="assets/images/food-img-2.png" class="card__img" alt="" />
+              <h3 class="card__title">delicious food</h3>
+              <div class="card__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__price">$49.99</div>
+              <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="card" data-target="card-3">
+              <img src="assets/images/food-img-3.png" class="card__img" alt="" />
+              <h3 class="card__title">delicious food</h3>
+              <div class="card__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__price">$49.99</div>
+              <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="card" data-target="card-4">
+              <img src="assets/images/food-img-4.png" class="card__img" alt="" />
+              <h3 class="card__title">delicious food</h3>
+              <div class="card__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__price">$49.99</div>
+              <a href="#" class="btn">buy now</a>
+            </div>
+            <div class="card" data-target="card-5">
+              <img src="assets/images/food-img-5.png" class="card__img" alt="" />
+              <h3 class="card__title">delicious food</h3>
+              <div class="card__stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="card__price">$49.99</div>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--swiper  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Light Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+.about {
+  &__container {
+    @include flex(space-between, center);
+    gap: 2rem;
+  }
+  &__content {
+    flex: 1 1 40rem;
+    p{
+      padding: 1.5rem 0;
+    }
+  }
+  &__image {
+    flex: 1 1 40rem;
+  }
+  &__boxes{
+    @include flex(center,center);
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  &__box{
+    flex: 1 1 15rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: $light-bg;
+    img{
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+    h3{
+      color: $light-black;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 1.8vw , 2rem);
+    }
+  }
+}

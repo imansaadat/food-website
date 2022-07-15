@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.heading{
+  text-align: center;
+  h3{
+    color: $brown;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+
+.preview{
+  position: relative;
+  &__closeIcon{
+    i{
+      font-size: 3.8rem;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      cursor: pointer;
+      &:hover{
+        color: $brown;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-bg;
+    backdrop-filter: blur(6px);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    &--active{
+      @include flex(center,center);
+    }
+  }
+  .card{
+    width: 34rem;
+    text-align: center;
+    display: none;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    padding: 2rem;
+    border-radius: .4rem;
+    animation: fadeIn 0.5s ease-in-out backwards;
+    &.active{
+      display: block;
+    }
+    &__img{
+      height: 24rem;
+    }
+    &__title{
+      padding: 1.5rem 0;
+    }
+    &__stars{
+      i{
+        font-size: 1.8rem;
+        color: $brown;
+      }
+    }
+    &__text{
+      padding: 1.5rem 0;
+    }
+    &__price{
+      font-size: 2.4rem;
+      color: $black;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
