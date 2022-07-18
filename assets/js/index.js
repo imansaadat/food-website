@@ -2,6 +2,7 @@ const burgerMenu = document.querySelector('.fa-bars')
 const nav = document.querySelector('.nav__list')
 const navLink = document.querySelectorAll('.nav__link')
 
+// Burger menu
 burgerMenu.addEventListener('click', () => {
   nav.classList.toggle('active')
   burgerMenu.classList.toggle('fa-times')
@@ -14,6 +15,7 @@ navLink.forEach(link=>{
     burgerMenu.classList.remove('fa-times')
   })
 })
+
 // Home slider
 var swiper = new Swiper(".home__slider", {
   grabCursor: true,
@@ -54,13 +56,13 @@ var swiper = new Swiper(".food__slider", {
 
 // Food / preview
 const foodCard = document.querySelectorAll('.food .card')
-const previewContainer = document.querySelector('.preview__container')
+const previewContainer = document.querySelector('.preview')
 const previewCard = document.querySelectorAll('.preview .card')
 const closeIcon = document.querySelector('.preview .preview__closeIcon')
 
 foodCard.forEach(food => {
   food.addEventListener('click', () => {
-    previewContainer.classList.add('preview__container--active');
+    previewContainer.classList.add('active');
     let name = food.getAttribute('data-name');
     previewCard.forEach(preview => {
       let target = preview.getAttribute('data-target')
@@ -72,7 +74,7 @@ foodCard.forEach(food => {
 })
 
 closeIcon.addEventListener('click', () => {
-  previewContainer.classList.remove('preview__container--active');
+  previewContainer.classList.remove('active');
   previewCard.forEach(preview => {
     preview.classList.remove('active')
   })
@@ -80,9 +82,22 @@ closeIcon.addEventListener('click', () => {
 
 window.addEventListener('click', (e) => {
   if (e.target == previewContainer) {
-    previewContainer.classList.remove('preview__container--active');
+    previewContainer.classList.remove('active');
     previewCard.forEach(preview => {
       preview.classList.remove('active')
     })
   }
 })
+
+
+var swiper = new Swiper(".menu__slider", {
+  grabCursor:true,
+  loop:true,
+  autoHeight:true,
+  centeredSlides:true,
+  spaceBetween: 20,
+  pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+  },
+});

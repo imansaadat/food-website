@@ -1,0 +1,44 @@
+@use "../abstracts/" as *;
+
+.order{
+  background-color: $brown;
+  &__heading{
+    h2,h3{
+      color: $white;
+    }
+  }
+  &__forms{
+    @include grid(30rem);
+    background-color: $white;
+    padding: 2rem;
+  }
+  &__field{
+    margin: 1.5rem 0;
+  }
+  &__input{
+    width: 100%;
+    border: $border;
+    padding: 1rem;
+    color: $light-black;
+    caret-color: $brown;
+    font-size: 1.6rem;
+    text-transform: none;
+    &::placeholder{
+      text-transform: capitalize;
+    }
+    &:focus{
+      border-color: $brown;
+    }
+  }
+  &__label{
+    display: block;
+    font-size: 1.8rem;
+    color: $light-black;
+    margin-bottom: 1rem;
+  }
+  &__map{
+    width: 100%;
+    height: 21rem;
+    border: none;
+  }
+}

@@ -149,7 +149,7 @@
           </div>
           <div class="swiper food__slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide food__slide">
                 <div class="card" data-name="card-1">
                   <img
                     src="assets/images/food-img-1.png"
@@ -160,7 +160,7 @@
                   <span class="card__price">$49.99</span>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide food__slide">
                 <div class="card" data-name="card-2">
                   <img
                     src="assets/images/food-img-2.png"
@@ -171,7 +171,7 @@
                   <span class="card__price">$49.99</span>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide food__slide">
                 <div class="card" data-name="card-3">
                   <img
                     src="assets/images/food-img-3.png"
@@ -182,7 +182,7 @@
                   <span class="card__price">$49.99</span>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide food__slide">
                 <div class="card" data-name="card-4">
                   <img
                     src="assets/images/food-img-4.png"
@@ -193,7 +193,7 @@
                   <span class="card__price">$49.99</span>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide food__slide">
                 <div class="card" data-name="card-5">
                   <img
                     src="assets/images/food-img-5.png"
@@ -210,93 +210,422 @@
         </div>
       </section>
       <!-- Food / Preview section -->
-      <section class="preview py">
-        <div class="container">
-          <div class="preview__container">
-            <div class="preview__closeIcon">
-              <i class="fas fa-times"></i>
-            </div>
-            <div class="card" data-target="card-1">
-              <img src="assets/images/food-img-1.png" class="card__img" alt="" />
-              <h3 class="card__title">delicious food</h3>
-              <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__price">$49.99</div>
-              <a href="#" class="btn">buy now</a>
-            </div>
-            <div class="card" data-target="card-2">
-              <img src="assets/images/food-img-2.png" class="card__img" alt="" />
-              <h3 class="card__title">delicious food</h3>
-              <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__price">$49.99</div>
-              <a href="#" class="btn">buy now</a>
-            </div>
-            <div class="card" data-target="card-3">
-              <img src="assets/images/food-img-3.png" class="card__img" alt="" />
-              <h3 class="card__title">delicious food</h3>
-              <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__price">$49.99</div>
-              <a href="#" class="btn">buy now</a>
-            </div>
-            <div class="card" data-target="card-4">
-              <img src="assets/images/food-img-4.png" class="card__img" alt="" />
-              <h3 class="card__title">delicious food</h3>
-              <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__price">$49.99</div>
-              <a href="#" class="btn">buy now</a>
-            </div>
-            <div class="card" data-target="card-5">
-              <img src="assets/images/food-img-5.png" class="card__img" alt="" />
-              <h3 class="card__title">delicious food</h3>
-              <div class="card__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="card__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-              <div class="card__price">$49.99</div>
-              <a href="#" class="btn">buy now</a>
-            </div>
+      <section class="preview">
+        <div class="preview__closeIcon">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="card" data-target="card-1">
+          <img src="assets/images/food-img-1.png" class="card__img" alt="" />
+          <h3 class="card__title">delicious food</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
+          <p class="card__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="card__price">$49.99</div>
+          <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="card" data-target="card-2">
+          <img src="assets/images/food-img-2.png" class="card__img" alt="" />
+          <h3 class="card__title">delicious food</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="card__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="card__price">$49.99</div>
+          <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="card" data-target="card-3">
+          <img src="assets/images/food-img-3.png" class="card__img" alt="" />
+          <h3 class="card__title">delicious food</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="card__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="card__price">$49.99</div>
+          <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="card" data-target="card-4">
+          <img src="assets/images/food-img-4.png" class="card__img" alt="" />
+          <h3 class="card__title">delicious food</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="card__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="card__price">$49.99</div>
+          <a href="#" class="btn">buy now</a>
+        </div>
+        <div class="card" data-target="card-5">
+          <img src="assets/images/food-img-5.png" class="card__img" alt="" />
+          <h3 class="card__title">delicious food</h3>
+          <div class="card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="card__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+          <div class="card__price">$49.99</div>
+          <a href="#" class="btn">buy now</a>
+        </div>
+      </section>
+      <!-- Gallery -->
+      <section id="gallery" class="gallery py">
+        <div class="heading">
+          <h3>Our Gallery</h3>
+          <h2>Our Untold Stories</h2>
+        </div>
+        <div class="container">
+          <div class="gallery__container">
+            <a
+              href="assets/images/food-galler-img-1.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-1.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a
+              href="assets/images/food-galler-img-2.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-2.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a
+              href="assets/images/food-galler-img-3.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-3.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a
+              href="assets/images/food-galler-img-4.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-4.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a
+              href="assets/images/food-galler-img-5.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-5.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a
+              href="assets/images/food-galler-img-6.jpg"
+              class="gallery__image"
+            >
+              <img src="assets/images/food-galler-img-6.jpg" alt="" />
+              <div class="gallery__icon">
+                <i class="fas fa-plus"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Menu -->
+      <section id="menu" class="menu py">
+        <div class="container">
+          <div class="heading">
+            <h3>our menu</h3>
+            <h2>our popular dishes</h2>
+          </div>
+          <div class="swiper menu__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="menu__title">breakfast</h3>
+                <div class="menu__boxes">
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>morning breakfast</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="menu__title">lunch</h3>
+                <div class="menu__boxes">
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious lunch</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious lunch</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious lunch</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious lunch</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="menu__title">dinner</h3>
+                <div class="menu__boxes">
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious dinner</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious dinner</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious dinner</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious dinner</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                  <div class="menu__content">
+                    <div class="menu__info">
+                      <h3>delicious dinner</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Ex, dolores.
+                      </p>
+                    </div>
+                    <div class="menu__price">$49.99</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Order -->
+      <section id="order" class="order py">
+        <div class="container">
+          <div class="heading order__heading">
+            <h3>order Now</h3>
+            <h2>fast Home delivery</h2>
+          </div>
+          <form action="#">
+            <div class="order__forms">
+              <div>
+                <div class="order__field">
+                  <label for="fname" class="order__label">full name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    class="order__input"
+                    placeholder="enter your name"
+                  />
+                </div>
+                <div class="order__field">
+                  <label for="food" class="order__label">food name</label>
+                  <input
+                    type="text"
+                    id="food"
+                    name="food"
+                    class="order__input"
+                    placeholder="food you want"
+                  />
+                </div>
+                <div class="order__field">
+                  <label for="details" class="order__label">Order Details</label>
+                  <input
+                    type="text"
+                    id="details"
+                    name="details"
+                    class="order__input"
+                    placeholder="specifics with food"
+                  />
+                </div>
+                <div class="order__field">
+                  <label for="address" class="order__label">your address</label>
+                  <textarea class="order__input" name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
+                </div>
+              </div>
+              <div>
+                <div class="order__field">
+                  <label for="number" class="order__label">number</label>
+                  <input
+                    type="text"
+                    id="number"
+                    name="number"
+                    class="order__input"
+                    placeholder="enter your number"
+                  />
+                </div>
+                <div class="order__field">
+                  <label for="amount" class="order__label">how much</label>
+                  <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    class="order__input"
+                    placeholder="how many you want"
+                  />
+                </div>
+                <div class="order__field">
+                  <label for="time" class="order__label">when you want</label>
+                  <input
+                    type="datetime-local"
+                    id="time"
+                    name="time"
+                    class="order__input"
+                  />
+                </div>
+                <div class="order__field order__map">
+                  <label class="order__label">our address</label>
+                  <iframe
+                    class="order__map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25905.073677568857!2d51.4939955!3d35.7475059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1656708278873!5m2!1sen!2s"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -306,5 +635,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/index.js"></script>
+    <!-- Gallery -->
+    <script>
+      lightGallery(document.querySelector(".gallery .gallery__container"));
+    </script>
   </body>
 </html>

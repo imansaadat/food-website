@@ -1,0 +1,35 @@
+@use "../abstracts/" as *;
+
+.gallery{
+  &__container{
+    @include grid(32rem)
+  }
+
+  &__image{
+    height:38rem;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover{
+      .gallery__icon{
+        @include flex(center,center)
+      }
+    }
+  }
+  &__icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: $dark-bg;
+    i{
+      font-size: 5rem;
+      color: $white;
+    }
+  }
+}

@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
   transition: all 0.3s;
+  text-transform: capitalize;
 }
 
 html {
@@ -30,6 +32,14 @@ a {
 
 .py {
   padding: 6rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #cd9452;
+}
+
+.swiper .swiper-pagination {
+  bottom: 0;
 }
 
 h1, h2, h3 {
@@ -89,6 +99,7 @@ p {
 
 .heading {
   text-align: center;
+  margin-bottom: 3rem;
 }
 .heading h3 {
   color: #cd9452;
@@ -287,24 +298,32 @@ p {
   font-size: 2.4rem;
   color: #cd9452;
 }
-.food .swiper-wrapper {
-  padding: 4rem 0;
-}
 .food .swiper-slide-active .card {
   opacity: 1;
   transform: scale(1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid #aaa;
 }
-.food .swiper-pagination {
-  bottom: 0;
-}
-.food .swiper-pagination-bullet-active {
-  background: #cd9452;
+.food__slide {
+  margin-bottom: 4rem;
 }
 
 .preview {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.preview.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .preview__closeIcon i {
   font-size: 3.8rem;
@@ -317,35 +336,18 @@ p {
   color: #cd9452;
   transform: rotate(180deg);
 }
-.preview__container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(6px);
-  top: 0;
-  left: 0;
-  z-index: 99;
-  display: none;
-}
-.preview__container--active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .preview .card {
   width: 34rem;
   text-align: center;
-  display: none;
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 2rem;
   border-radius: 0.4rem;
+  display: none;
   animation: fadeIn 0.5s ease-in-out backwards;
 }
 .preview .card.active {
-  display: block;
+  display: inline-block;
 }
 .preview .card__img {
   height: 24rem;
@@ -364,6 +366,126 @@ p {
   font-size: 2.4rem;
   color: #222;
   margin-bottom: 1.5rem;
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 2rem;
+}
+.gallery__image {
+  height: 38rem;
+  position: relative;
+}
+.gallery__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__image:hover .gallery__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.gallery__icon i {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.menu {
+  background-color: #f5f5f5;
+}
+.menu__title {
+  background-color: #cd9452;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+}
+.menu__boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+.menu__content {
+  flex: 1 1 40rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 0.1rem solid #aaa;
+  padding: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu__content:hover {
+  transform: scale(0.9);
+}
+.menu__price {
+  color: #cd9452;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 992px) {
+  .menu__content {
+    text-align: center;
+  }
+}
+.order {
+  background-color: #cd9452;
+}
+.order__heading h2, .order__heading h3 {
+  color: #fff;
+}
+.order__forms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+.order__field {
+  margin: 1.5rem 0;
+}
+.order__input {
+  width: 100%;
+  border: 0.1rem solid #aaa;
+  padding: 1rem;
+  color: #666;
+  caret-color: #cd9452;
+  font-size: 1.6rem;
+  text-transform: none;
+}
+.order__input::placeholder {
+  text-transform: capitalize;
+}
+.order__input:focus {
+  border-color: #cd9452;
+}
+.order__label {
+  display: block;
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.order__map {
+  width: 100%;
+  height: 21rem;
+  border: none;
 }
 
 @keyframes fadeIn {

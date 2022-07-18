@@ -24,9 +24,6 @@
       color: $brown;
     }
   }
-  .swiper-wrapper {
-    padding: 4rem 0;
-  }
   .swiper-slide-active {
     .card {
       opacity: 1;
@@ -35,10 +32,7 @@
       border: $border;
     }
   }
-  .swiper-pagination {
-    bottom: 0;
-  }
-  .swiper-pagination-bullet-active {
-    background: $brown;
+  &__slide{
+    margin-bottom:4rem;
   }
 }

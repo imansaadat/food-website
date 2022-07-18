@@ -1,10 +1,13 @@
+@use "../abstracts/" as *;
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
   transition: all 0.3s;
+  text-transform: capitalize;
 }
 
 html {
@@ -31,4 +34,11 @@ a {
 
 .py {
   padding: 6rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: $brown;
+}
+.swiper .swiper-pagination {
+  bottom:0;
 }
