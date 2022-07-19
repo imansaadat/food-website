@@ -24,7 +24,7 @@
     border: $border;
     padding: 2rem;
     cursor: pointer;
-    @include flex (center,center);
+    @include flex (space-between,center);
     &:hover {
       transform: scale(.9);
     }
@@ -40,6 +40,7 @@
   .menu{
     &__content{
       text-align: center;
+      @include flex(center,center);
     }
   }
 }

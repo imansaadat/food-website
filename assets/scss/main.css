@@ -428,7 +428,7 @@ p {
   padding: 2rem;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -443,6 +443,10 @@ p {
 @media (max-width: 992px) {
   .menu__content {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 .order {
