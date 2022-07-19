@@ -101,3 +101,30 @@ var swiper = new Swiper(".menu__slider", {
      clickable: true,
   },
 });
+
+
+var swiper = new Swiper(".blogs__slider", {
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});

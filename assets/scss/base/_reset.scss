@@ -42,3 +42,9 @@ a {
 .swiper .swiper-pagination {
   bottom:0;
 }
+
+@media (max-width:414px){
+  html{
+     font-size: 50%;
+  }
+}

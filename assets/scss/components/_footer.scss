@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.footer {
+  text-align: center;
+  &__cols {
+    @include grid(24rem);
+  }
+
+  &__col {
+    text-align: center;
+    i {
+      width: 5.5rem;
+      height: 5.5rem;
+      line-height: 5.5rem;
+      background-color: $brown;
+      color: $white;
+      font-size: 3rem;
+      border-radius: 50%;
+    }
+    h4 {
+      padding: 1rem 0;
+      font-size: 2.2rem;
+      color: $black;
+    }
+  }
+  &__copy-right {
+    border-top: $border;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    span {
+      color: $brown;
+    }
+  }
+  &__media {
+    padding: 4rem 0;
+    a {
+      width: 4rem;
+      height: 4rem;
+      color: $white;
+      background-color: $black;
+      font-size: 2rem;
+      line-height: 4rem;
+      margin: 0 0.2rem;
+      &:hover {
+        background-color: $brown;
+      }
+    }
+  }
+}
