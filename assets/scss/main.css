@@ -54,11 +54,6 @@ a {
   bottom: 0;
 }
 
-@media (max-width: 414px) {
-  html {
-    font-size: 50%;
-  }
-}
 h1, h2, h3 {
   color: #222;
   text-transform: capitalize;
