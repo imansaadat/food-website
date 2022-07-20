@@ -41,9 +41,11 @@
       background-color: $black;
       font-size: 2rem;
       line-height: 4rem;
-      margin: 0 0.2rem;
+      margin: 0 .5rem;
+      transition: .6s;
       &:hover {
         background-color: $brown;
+        transform: rotate(360deg);
       }
     }
   }

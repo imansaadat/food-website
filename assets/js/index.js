@@ -89,7 +89,7 @@ window.addEventListener('click', (e) => {
   }
 })
 
-
+// menu slider
 var swiper = new Swiper(".menu__slider", {
   grabCursor:true,
   loop:true,
@@ -102,7 +102,7 @@ var swiper = new Swiper(".menu__slider", {
   },
 });
 
-
+// blogs slider
 var swiper = new Swiper(".blogs__slider", {
   grabCursor: true,
   loop: true,

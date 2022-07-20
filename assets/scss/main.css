@@ -11,7 +11,19 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cd9452;
 }
 
 body {
@@ -292,6 +304,7 @@ p {
   border-radius: 0.4rem;
   opacity: 0.5;
   transform: scale(0.9);
+  border: 0.1rem solid transparent;
   cursor: pointer;
 }
 .food .card__img {
@@ -335,6 +348,7 @@ p {
   flex-wrap: wrap;
 }
 .preview__closeIcon i {
+  color: #fff;
   font-size: 3.8rem;
   position: absolute;
   top: 1.5rem;
@@ -600,10 +614,12 @@ p {
   background-color: #222;
   font-size: 2rem;
   line-height: 4rem;
-  margin: 0 0.2rem;
+  margin: 0 0.5rem;
+  transition: 0.6s;
 }
 .footer__media a:hover {
   background-color: #cd9452;
+  transform: rotate(360deg);
 }
 
 @keyframes fadeIn {
